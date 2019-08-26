@@ -1,66 +1,69 @@
 fileFormatVersion: 2
-guid: e756483f5de4beb449ed47761230eb2e
+guid: 1baf236323d4b6444804ad8b414a2bf6
 TextureImporter:
   fileIDToRecycleName:
-    21300000: Ms-Pacman L1
-    21300002: Ms-Pacman L2
-    21300004: Ms-Pacman L3
-    21300006: New Piskel_3
-    21300008: New Piskel_4
-    21300010: New Piskel_5
-    21300012: New Piskel_6
-    21300014: New Piskel_7
-    21300016: New Piskel_8
-    21300018: New Piskel_9
-    21300020: New Piskel_10
-    21300022: New Piskel_11
-    21300024: New Piskel_12
-    21300026: New Piskel_13
-    21300028: New Piskel_14
-    21300030: New Piskel_15
-    21300032: New Piskel_16
-    21300034: New Piskel_17
-    21300036: New Piskel_18
-    21300038: New Piskel_19
-    21300040: New Piskel_20
-    21300042: New Piskel_21
-    21300044: New Piskel_22
-    21300046: New Piskel_23
-    21300048: New Piskel_24
-    21300050: New Piskel_25
-    21300052: New Piskel_26
-    21300054: New Piskel_27
-    21300056: New Piskel_28
-    21300058: New Piskel_29
-    21300060: New Piskel_30
-    21300062: New Piskel_31
-    21300064: New Piskel_32
-    21300066: New Piskel_33
-    21300068: New Piskel_34
-    21300070: New Piskel_35
-    21300072: New Piskel_36
-    21300074: New Piskel_37
-    21300076: New Piskel_38
-    21300078: New Piskel_39
-    21300080: New Piskel_40
-    21300082: New Piskel_41
-    21300084: New Piskel_42
-    21300086: New Piskel_43
-    21300088: New Piskel_44
-    21300090: New Piskel_45
-    21300092: New Piskel_46
-    21300094: New Piskel_47
-    21300096: New Piskel_48
-    21300098: New Piskel_49
-    21300100: New Piskel_50
-    21300102: New Piskel_51
-    21300104: New Piskel_52
-    21300106: New Piskel_53
-    21300108: New Piskel_54
-    21300110: New Piskel_55
-    21300112: New Piskel_56
-    21300114: New Piskel_57
-    21300116: New Piskel_58
+    21300000: MsPacmanL1
+    21300002: MsPacmanL2
+    21300004: MsPacmanL3
+    21300006: MsPacmanU1
+    21300008: MsPacmanU2
+    21300010: MsPacmanU3
+    21300012: MsPacmanR1
+    21300014: MsPacmanR2
+    21300016: MsPacmanR3
+    21300018: MsPacmanD1
+    21300020: MsPacmanD2
+    21300022: MsPacmanD3
+    21300024: WeakGhostO1
+    21300026: WeakGhostO2
+    21300028: WeakGhostW1
+    21300030: WeakGhostW2
+    21300032: RedGhostL1
+    21300034: RedGhostL2
+    21300036: RedGhostU1
+    21300038: RedGhostU2
+    21300040: RedGhostR1
+    21300042: RedGhostR2
+    21300044: RedGhostD1
+    21300046: RedGhostD2
+    21300048: BlueGhostL1
+    21300050: BlueGhostL2
+    21300052: BlueGhostU1
+    21300054: BlueGhostU2
+    21300056: BlueGhostR1
+    21300058: BlueGhostR2
+    21300060: BlueGhostD1
+    21300062: BlueGhostD2
+    21300064: GreenGhostL1
+    21300066: GreenGhostL2
+    21300068: GreenGhostU1
+    21300070: GreenGhostU2
+    21300072: GreenGhostR1
+    21300074: GreenGhostR2
+    21300076: GreenGhostD1
+    21300078: GreenGhostD2
+    21300080: PurpleGhostL1
+    21300082: PurpleGhostL2
+    21300084: PurpleGhostU1
+    21300086: PurpleGhostU2
+    21300088: PurpleGhostR1
+    21300090: PurpleGhostR2
+    21300092: PurpleGhostD1
+    21300094: PurpleGhostD2
+    21300096: DeadGhostL
+    21300098: DeadGhostU
+    21300100: DeadGhostR
+    21300102: DeadGhostD
+    21300104: BonusP1
+    21300106: BonusP2
+    21300108: BonusP3
+    21300110: BonusP4
+    21300112: SuperPellet
+    21300114: Pellet
+    21300116: BonusI1
+    21300118: BonusI2
+    21300120: ExtraLife
+    21300122: TimeStop
   externalObjects: {}
   serializedVersion: 9
   mipmaps:
@@ -104,7 +107,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 24
+  spritePixelsToUnits: 16
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -143,13 +146,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Ms-Pacman L1
+      name: MsPacmanL1
       rect:
         serializedVersion: 2
         x: 0
-        y: 3069
-        width: 483
-        height: 486
+        y: 3584
+        width: 512
+        height: 512
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -157,19 +160,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8806dec706bba42478ce6430b627b6e6
+      spriteID: f107cfc4a64169b4b99b9118b98efee5
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Ms-Pacman L2
+      name: MsPacmanL2
       rect:
         serializedVersion: 2
-        x: 541
-        y: 3069
-        width: 454
-        height: 486
+        x: 512
+        y: 3584
+        width: 512
+        height: 512
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -177,19 +180,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6ceef2be86908044d907ecd72b0f607b
+      spriteID: 1386ee2be135fed488dc4186062a9656
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Ms-Pacman L3
+      name: MsPacmanL3
       rect:
         serializedVersion: 2
-        x: 1085
-        y: 3069
-        width: 422
-        height: 486
+        x: 1024
+        y: 3584
+        width: 512
+        height: 512
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -197,19 +200,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 794f66449ed30ba47adafbb14ff1e558
+      spriteID: a327ff5c5575da24c890df85a6df16c1
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: New Piskel_3
+      name: MsPacmanU1
       rect:
         serializedVersion: 2
-        x: 1533
-        y: 3101
-        width: 486
-        height: 483
+        x: 1536
+        y: 3584
+        width: 512
+        height: 512
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -217,19 +220,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e2e0937eb9d6de3489280e709e9da3cd
+      spriteID: 1af926ae1cd2dbb4bad36915b84ae57b
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: New Piskel_4
+      name: MsPacmanU2
       rect:
         serializedVersion: 2
-        x: 2045
-        y: 3101
-        width: 486
-        height: 454
+        x: 2048
+        y: 3584
+        width: 512
+        height: 512
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -237,19 +240,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7fc635b484b15434a9058a46c74959e4
+      spriteID: d0cb38cb89dc5c543b43c41cc62e75bc
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: New Piskel_5
+      name: MsPacmanU3
       rect:
         serializedVersion: 2
-        x: 2557
-        y: 3101
-        width: 486
-        height: 422
+        x: 2560
+        y: 3584
+        width: 512
+        height: 512
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -257,19 +260,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4adec9017f434204d880a90b33340d85
+      spriteID: 6ebfaf09190519d4891b4305f0348c6a
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: New Piskel_6
+      name: MsPacmanR1
       rect:
         serializedVersion: 2
-        x: 3069
-        y: 3069
-        width: 518
-        height: 515
+        x: 3072
+        y: 3584
+        width: 512
+        height: 512
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -277,19 +280,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f46ed1db4d9b6b2449f23c78d84f2ee3
+      spriteID: 8578897a79b938142b34c4339888dc52
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: New Piskel_7
+      name: MsPacmanR2
       rect:
         serializedVersion: 2
-        x: 3613
-        y: 3069
-        width: 483
-        height: 486
+        x: 3584
+        y: 3584
+        width: 512
+        height: 512
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -297,19 +300,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 50b3ed89a88e8f04b8c465f89f06de81
+      spriteID: 1fe341657d0ab7b498fcf469e4fc6db9
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: New Piskel_8
+      name: MsPacmanR3
       rect:
         serializedVersion: 2
-        x: 29
-        y: 2557
-        width: 422
-        height: 486
+        x: 0
+        y: 3072
+        width: 512
+        height: 512
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -317,19 +320,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: bc66c479313ba5b449edb3066b8a4c11
+      spriteID: 5eb44c670c36d594dab0cea5a3617fa1
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: New Piskel_9
+      name: MsPacmanD1
       rect:
         serializedVersion: 2
-        x: 541
-        y: 2557
-        width: 486
-        height: 486
+        x: 512
+        y: 3072
+        width: 512
+        height: 512
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -337,19 +340,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c0ee63b2c09a8d84c9e35e0d448fdc68
+      spriteID: 4799aabfe4e7cef4f9dc308473a5564e
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: New Piskel_10
+      name: MsPacmanD2
       rect:
         serializedVersion: 2
-        x: 1053
-        y: 2589
-        width: 486
-        height: 454
+        x: 1024
+        y: 3072
+        width: 512
+        height: 512
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -357,19 +360,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7c02b208cb669674c82d4560fb58f53e
+      spriteID: bc2483df6f655034a9312da37e63f7a7
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: New Piskel_11
+      name: MsPacmanD3
       rect:
         serializedVersion: 2
-        x: 1565
-        y: 2621
-        width: 486
-        height: 422
+        x: 1536
+        y: 3072
+        width: 512
+        height: 512
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -377,19 +380,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2816c6f86bb90e54e91950d9f2156b3e
+      spriteID: bfa349ee6c23fa147819091a27e0c1c0
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: New Piskel_12
+      name: WeakGhostO1
       rect:
         serializedVersion: 2
-        x: 2077
-        y: 2589
-        width: 454
-        height: 454
+        x: 2048
+        y: 3072
+        width: 512
+        height: 512
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -397,19 +400,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b43b84f4f6181894885eded5ce1e5a7f
+      spriteID: 9273f3ed2144e9e48978f8ea3f799810
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: New Piskel_13
+      name: WeakGhostO2
       rect:
         serializedVersion: 2
-        x: 2589
-        y: 2589
-        width: 454
-        height: 454
+        x: 2560
+        y: 3072
+        width: 512
+        height: 512
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -417,19 +420,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5e569fb5663c84541a403317b6d20cd2
+      spriteID: 436dea1498c4b174c90ae4da20cb6bf0
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: New Piskel_14
+      name: WeakGhostW1
       rect:
         serializedVersion: 2
-        x: 3101
-        y: 2589
-        width: 454
-        height: 454
+        x: 3072
+        y: 3072
+        width: 512
+        height: 512
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -437,19 +440,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 09bcad4f37c194049a2479f6e4470c91
+      spriteID: f034dc51815fca94392163a83728100d
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: New Piskel_15
+      name: WeakGhostW2
       rect:
         serializedVersion: 2
-        x: 3613
-        y: 2589
-        width: 454
-        height: 454
+        x: 3584
+        y: 3072
+        width: 512
+        height: 512
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -457,19 +460,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b3bfac42b115d0c4eb4419b8ff50d302
+      spriteID: 53a5b0ae642f84243af41f411beae10b
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: New Piskel_16
+      name: RedGhostL1
       rect:
         serializedVersion: 2
-        x: 29
-        y: 2077
-        width: 454
-        height: 454
+        x: 0
+        y: 2560
+        width: 512
+        height: 512
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -477,19 +480,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 67bf29a043c5e554d882425f241b2b31
+      spriteID: 9ce68b248be125b4590438bfa76f6023
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: New Piskel_17
+      name: RedGhostL2
       rect:
         serializedVersion: 2
-        x: 541
-        y: 2077
-        width: 454
-        height: 454
+        x: 512
+        y: 2560
+        width: 512
+        height: 512
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -497,19 +500,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f39fc9193decd364b856693123616a32
+      spriteID: da38f4319848ac34cb24b2e6a5625af1
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: New Piskel_18
+      name: RedGhostU1
       rect:
         serializedVersion: 2
-        x: 1053
-        y: 2077
-        width: 454
-        height: 454
+        x: 1024
+        y: 2560
+        width: 512
+        height: 512
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -517,19 +520,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 302efe48a4b52fa45918400bdf87048d
+      spriteID: bf84055d335a71c43b2c25e2ab169641
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: New Piskel_19
+      name: RedGhostU2
       rect:
         serializedVersion: 2
-        x: 1565
-        y: 2077
-        width: 454
-        height: 454
+        x: 1536
+        y: 2560
+        width: 512
+        height: 512
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -537,19 +540,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c6a0b966ecc6d9d43990164d05f9eb7d
+      spriteID: 9e6c03e9fdb80c04d8344011edb65f5c
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: New Piskel_20
+      name: RedGhostR1
       rect:
         serializedVersion: 2
-        x: 2077
-        y: 2077
-        width: 454
-        height: 454
+        x: 2048
+        y: 2560
+        width: 512
+        height: 512
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -557,19 +560,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9cd2d9f3de86e3b498bb0b707d27751f
+      spriteID: 4010b26399c78814e8ca8fdaa4dada10
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: New Piskel_21
+      name: RedGhostR2
       rect:
         serializedVersion: 2
-        x: 2589
-        y: 2077
-        width: 454
-        height: 454
+        x: 2560
+        y: 2560
+        width: 512
+        height: 512
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -577,19 +580,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 22d2963bc3991904184896373511dce0
+      spriteID: e50d5480c551914439f1c00b64e1298a
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: New Piskel_22
+      name: RedGhostD1
       rect:
         serializedVersion: 2
-        x: 3101
-        y: 2077
-        width: 454
-        height: 454
+        x: 3072
+        y: 2560
+        width: 512
+        height: 512
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -597,19 +600,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d89f2c344fa62e443a011f6eb3802643
+      spriteID: b78a5a419792f194a8623cbab4fba2ea
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: New Piskel_23
+      name: RedGhostD2
       rect:
         serializedVersion: 2
-        x: 3613
-        y: 2077
-        width: 454
-        height: 454
+        x: 3584
+        y: 2560
+        width: 512
+        height: 512
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -617,19 +620,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6678227907470044a8ca03c01416ab1b
+      spriteID: 55a6202d1ec8eb84f83303b857fb1430
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: New Piskel_24
+      name: BlueGhostL1
       rect:
         serializedVersion: 2
-        x: 29
-        y: 1565
-        width: 454
-        height: 454
+        x: 0
+        y: 2048
+        width: 512
+        height: 512
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -637,19 +640,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4bdb4ad6ce8bd1a42a336a7bba1cfce2
+      spriteID: 3d3aad5bde39fed4d9004801028fc48e
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: New Piskel_25
+      name: BlueGhostL2
       rect:
         serializedVersion: 2
-        x: 541
-        y: 1565
-        width: 454
-        height: 454
+        x: 512
+        y: 2048
+        width: 512
+        height: 512
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -657,19 +660,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 41107e96a3ab9a54ab2360da5d3af0f5
+      spriteID: 66259001cfb3a264d9ad2fdafe41c503
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: New Piskel_26
+      name: BlueGhostU1
       rect:
         serializedVersion: 2
-        x: 1053
-        y: 1565
-        width: 454
-        height: 454
+        x: 1024
+        y: 2048
+        width: 512
+        height: 512
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -677,19 +680,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 838a54f5f7282f84999059f2159b5e38
+      spriteID: d27ed204002982d4bae7b6ddc03aa530
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: New Piskel_27
+      name: BlueGhostU2
       rect:
         serializedVersion: 2
-        x: 1565
-        y: 1565
-        width: 454
-        height: 454
+        x: 1536
+        y: 2048
+        width: 512
+        height: 512
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -697,19 +700,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: dd188a88c3aad8245a3353fe18b0f9fb
+      spriteID: 22fdfb51437223a41a221379015f10f4
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: New Piskel_28
+      name: BlueGhostR1
       rect:
         serializedVersion: 2
-        x: 2077
-        y: 1565
-        width: 454
-        height: 454
+        x: 2048
+        y: 2048
+        width: 512
+        height: 512
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -717,19 +720,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5fe16c1c877874747a399d0db99ead9e
+      spriteID: 6d908495e4b4aff4ba39ef300b6ef210
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: New Piskel_29
+      name: BlueGhostR2
       rect:
         serializedVersion: 2
-        x: 2589
-        y: 1565
-        width: 454
-        height: 454
+        x: 2560
+        y: 2048
+        width: 512
+        height: 512
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -737,19 +740,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7ddd7aeb196b5e24ba2f6f1d45195c09
+      spriteID: a7eacabad2ffd664b922f0e49a49f6c6
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: New Piskel_30
+      name: BlueGhostD1
       rect:
         serializedVersion: 2
-        x: 3101
-        y: 1565
-        width: 454
-        height: 454
+        x: 3072
+        y: 2048
+        width: 512
+        height: 512
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -757,19 +760,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 12d3b1c002a354548b43f68c0e5e45b3
+      spriteID: 68052b21d66516a49b815ab2c4a82b59
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: New Piskel_31
+      name: BlueGhostD2
       rect:
         serializedVersion: 2
-        x: 3613
-        y: 1565
-        width: 454
-        height: 454
+        x: 3584
+        y: 2048
+        width: 512
+        height: 512
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -777,19 +780,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ac117904a8403fd4882fafd586f7c869
+      spriteID: 6c5f9324be4a2a64f88890db21e0fc5a
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: New Piskel_32
+      name: GreenGhostL1
       rect:
         serializedVersion: 2
-        x: 29
-        y: 1053
-        width: 454
-        height: 454
+        x: 0
+        y: 1536
+        width: 512
+        height: 512
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -797,19 +800,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d256e551bc551ec4ab543c25b054ad44
+      spriteID: bea8ec26c5c1085408cfbe5d30e778f3
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: New Piskel_33
+      name: GreenGhostL2
       rect:
         serializedVersion: 2
-        x: 541
-        y: 1053
-        width: 454
-        height: 454
+        x: 512
+        y: 1536
+        width: 512
+        height: 512
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -817,19 +820,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0c6f50dffa89a4941a653531995be4ea
+      spriteID: fe1098a4332a7b2469c368377a5d9a60
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: New Piskel_34
+      name: GreenGhostU1
       rect:
         serializedVersion: 2
-        x: 1053
-        y: 1053
-        width: 454
-        height: 454
+        x: 1024
+        y: 1536
+        width: 512
+        height: 512
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -837,19 +840,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 36a733656d40fb640a6d3c3056264636
+      spriteID: ed2e7a6b891a56d459e4b5867a29449c
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: New Piskel_35
+      name: GreenGhostU2
       rect:
         serializedVersion: 2
-        x: 1565
-        y: 1053
-        width: 454
-        height: 454
+        x: 1536
+        y: 1536
+        width: 512
+        height: 512
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -857,19 +860,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 60d9f9b9cdd67c348a1b6d2c300d3e8d
+      spriteID: 690696828ca02344d84963eb33e7c5b2
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: New Piskel_36
+      name: GreenGhostR1
       rect:
         serializedVersion: 2
-        x: 2077
-        y: 1053
-        width: 454
-        height: 454
+        x: 2048
+        y: 1536
+        width: 512
+        height: 512
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -877,19 +880,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d7be00ce67bec2a409560b06150a0939
+      spriteID: 93819ec7ea3422e4a8dd209dd3dcb2cb
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: New Piskel_37
+      name: GreenGhostR2
       rect:
         serializedVersion: 2
-        x: 2589
-        y: 1053
-        width: 454
-        height: 454
+        x: 2560
+        y: 1536
+        width: 512
+        height: 512
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -897,19 +900,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d8eab416bb01686429f099a6e2abbdab
+      spriteID: 2ec501f52530b4442839bf54e28623b5
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: New Piskel_38
+      name: GreenGhostD1
       rect:
         serializedVersion: 2
-        x: 3101
-        y: 1053
-        width: 454
-        height: 454
+        x: 3072
+        y: 1536
+        width: 512
+        height: 512
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -917,19 +920,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8ddadd538a191e943b64e57dabd983a6
+      spriteID: 2e48e72e87f90ad4fbcdf0ec65cf0341
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: New Piskel_39
+      name: GreenGhostD2
       rect:
         serializedVersion: 2
-        x: 3613
-        y: 1053
-        width: 454
-        height: 454
+        x: 3584
+        y: 1536
+        width: 512
+        height: 512
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -937,19 +940,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e872ba8890347014a9794e96181206fc
+      spriteID: b9cde45423ffc054bbfab594e17d05ca
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: New Piskel_40
+      name: PurpleGhostL1
       rect:
         serializedVersion: 2
-        x: 29
-        y: 541
-        width: 454
-        height: 454
+        x: 0
+        y: 1024
+        width: 512
+        height: 512
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -957,19 +960,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1345bded348be1c4fa5f8e4e6e5b91d5
+      spriteID: 0096ff0bc6f0bfe42b106d45583f23fb
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: New Piskel_41
+      name: PurpleGhostL2
       rect:
         serializedVersion: 2
-        x: 541
-        y: 541
-        width: 454
-        height: 454
+        x: 512
+        y: 1024
+        width: 512
+        height: 512
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -977,19 +980,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d731f0048d2df404faf3513df44af04f
+      spriteID: 8d8368acf717ecf41b0b1847b934bf0b
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: New Piskel_42
+      name: PurpleGhostU1
       rect:
         serializedVersion: 2
-        x: 1053
-        y: 541
-        width: 454
-        height: 454
+        x: 1024
+        y: 1024
+        width: 512
+        height: 512
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -997,19 +1000,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0e01b49c8a1c59940afab302e904d15f
+      spriteID: f20e6058c45e7004897e877d5d271799
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: New Piskel_43
+      name: PurpleGhostU2
       rect:
         serializedVersion: 2
-        x: 1565
-        y: 541
-        width: 454
-        height: 454
+        x: 1536
+        y: 1024
+        width: 512
+        height: 512
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1017,19 +1020,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 26639a106a8756a4ead84fcdf9f3a38f
+      spriteID: 91fe67286a6e1674e8b8984b7835902e
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: New Piskel_44
+      name: PurpleGhostR1
       rect:
         serializedVersion: 2
-        x: 2077
-        y: 541
-        width: 454
-        height: 454
+        x: 2048
+        y: 1024
+        width: 512
+        height: 512
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1037,19 +1040,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 57917269848601f458f0327e0e7d53e1
+      spriteID: ed495ae54215ce8438beb0e18c11087f
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: New Piskel_45
+      name: PurpleGhostR2
       rect:
         serializedVersion: 2
-        x: 2589
-        y: 541
-        width: 454
-        height: 454
+        x: 2560
+        y: 1024
+        width: 512
+        height: 512
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1057,19 +1060,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 69f33b3c056894c49826d2519bb93611
+      spriteID: 396755c6115c57d44b042ac45ca2c2d3
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: New Piskel_46
+      name: PurpleGhostD1
       rect:
         serializedVersion: 2
-        x: 3101
-        y: 541
-        width: 454
-        height: 454
+        x: 3072
+        y: 1024
+        width: 512
+        height: 512
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1077,19 +1080,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9eb14ccaf7944f0419c1416c9c3aba67
+      spriteID: c1b63833af55256488c777d683c1f357
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: New Piskel_47
+      name: PurpleGhostD2
       rect:
         serializedVersion: 2
-        x: 3613
-        y: 541
-        width: 454
-        height: 454
+        x: 3584
+        y: 1024
+        width: 512
+        height: 512
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1097,19 +1100,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a317d4612195a2748a7211dbda054737
+      spriteID: b09d0f134387f5a43b800735fd0cfce2
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: New Piskel_48
+      name: DeadGhostL
       rect:
         serializedVersion: 2
-        x: 93
-        y: 221
-        width: 134
-        height: 166
+        x: 0
+        y: 512
+        width: 512
+        height: 512
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1117,19 +1120,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 61a57535412c4104fae632c2a7707cc0
+      spriteID: 6f05c3b7e6aa1c74083bba557553a81b
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: New Piskel_49
+      name: DeadGhostU
       rect:
         serializedVersion: 2
-        x: 285
-        y: 221
-        width: 134
-        height: 166
+        x: 512
+        y: 512
+        width: 512
+        height: 512
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1137,19 +1140,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8e8bdc94158397447b81b498bdb439c2
+      spriteID: b9b3d3665a311114391631fceb7f6f78
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: New Piskel_50
+      name: DeadGhostR
       rect:
         serializedVersion: 2
-        x: 605
-        y: 221
-        width: 134
-        height: 166
+        x: 1024
+        y: 512
+        width: 512
+        height: 512
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1157,19 +1160,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2eb541b4112f02645bca056406cf9d50
+      spriteID: c51ad24145230714c8c6347e186368f8
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: New Piskel_51
+      name: DeadGhostD
       rect:
         serializedVersion: 2
-        x: 797
-        y: 221
-        width: 134
-        height: 166
+        x: 1536
+        y: 512
+        width: 512
+        height: 512
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1177,19 +1180,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2bf6ca96b1607094d8b8c4e6aea821a8
+      spriteID: 4afb88591c3fedd419bea094fd296cf8
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: New Piskel_52
+      name: BonusP1
       rect:
         serializedVersion: 2
-        x: 1117
-        y: 221
-        width: 134
-        height: 166
+        x: 2048
+        y: 512
+        width: 512
+        height: 512
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1197,19 +1200,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2c26933a559ff174e99043c013552cf4
+      spriteID: e675db692d43abc4b9e39ad9db138b82
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: New Piskel_53
+      name: BonusP2
       rect:
         serializedVersion: 2
-        x: 1309
-        y: 221
-        width: 134
-        height: 166
+        x: 2560
+        y: 512
+        width: 512
+        height: 512
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1217,19 +1220,59 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8b35b96b45fc0c844b5593ae9fc0eee5
+      spriteID: 30869d1931c7c9c4388824d4dcd75e20
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: New Piskel_54
+      name: BonusP3
       rect:
         serializedVersion: 2
-        x: 1629
+        x: 3072
+        y: 512
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ed5d86835cba90a4d8b6a63c8504e3cd
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BonusP4
+      rect:
+        serializedVersion: 2
+        x: 3584
+        y: 512
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 07765ad30d99f524a8ece1e96994387c
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SuperPellet
+      rect:
+        serializedVersion: 2
+        x: 0
         y: 0
-        width: 198
-        height: 387
+        width: 512
+        height: 512
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1237,79 +1280,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 394bb866aec287947951491a7644c6fc
+      spriteID: abf2b3fba8f9e3a4c8ca5e74c5154ea5
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: New Piskel_55
+      name: Pellet
       rect:
         serializedVersion: 2
-        x: 1821
-        y: 221
-        width: 134
-        height: 166
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 8af1a73a428bf624ca927237ab452671
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: New Piskel_56
-      rect:
-        serializedVersion: 2
-        x: 2173
-        y: 157
-        width: 230
-        height: 230
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: a30d7ce7ffabc1e439f5309f2b9f071e
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: New Piskel_57
-      rect:
-        serializedVersion: 2
-        x: 2589
-        y: 157
-        width: 422
-        height: 198
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: ad0dc2d7106b5224babeee9e14b5e97c
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: New Piskel_58
-      rect:
-        serializedVersion: 2
-        x: 3069
+        x: 512
         y: 0
-        width: 518
-        height: 483
+        width: 512
+        height: 512
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1317,7 +1300,87 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c5e6f8c808d5f934f8f5d2582866951f
+      spriteID: b9bb889d9c5fe2248bae83ada7c6027b
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BonusI1
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 0
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e299ff90469ad5d4e8244bd64239695c
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BonusI2
+      rect:
+        serializedVersion: 2
+        x: 1536
+        y: 0
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ad9a574f375f3a946a5bdeba3907b952
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ExtraLife
+      rect:
+        serializedVersion: 2
+        x: 2048
+        y: 0
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 77a6c19512977bc48928e950171905aa
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TimeStop
+      rect:
+        serializedVersion: 2
+        x: 2560
+        y: 0
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 695fd3235606bd94582b9986d4b657a1
       vertices: []
       indices: 
       edges: []
@@ -1325,7 +1388,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 39699581ba6766a42ae6b777071adc2e
+    spriteID: 5186b648fbc678e41a01c34ce2c5a9bd
     vertices: []
     indices: 
     edges: []
