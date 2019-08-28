@@ -1,14 +1,15 @@
 fileFormatVersion: 2
-guid: 8003eec74371db44b8427c4ea9a54140
+guid: 13ea0f48f4d893f45a58c1038e00e77a
 TextureImporter:
   fileIDToRecycleName:
-    21300000: Right Corner
-    21300002: Small Bar
+    21300000: Short Corner
+    21300002: Long Bar
     21300004: Wide Block
-    21300006: T-Bar
-    21300008: Tall Block
-    21300010: Left Corner
-    21300012: Long Bar
+    21300006: Long Corner
+    21300008: T-Bar Tall
+    21300010: Tall Block
+    21300012: T-Bar Short
+    21300014: Small Bar
   externalObjects: {}
   serializedVersion: 9
   mipmaps:
@@ -38,7 +39,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 0
+    filterMode: -1
     aniso: -1
     mipBias: -100
     wrapU: 1
@@ -91,13 +92,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Right Corner
+      name: Short Corner
       rect:
         serializedVersion: 2
-        x: 556
-        y: 6188
-        width: 838
-        height: 830
+        x: 563
+        y: 4869
+        width: 656
+        height: 652
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -105,107 +106,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b631ca1ee35b7cb42a9fc9f5c37508f3
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Small Bar
-      rect:
-        serializedVersion: 2
-        x: 2499
-        y: 6670
-        width: 654
-        height: 239
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 339e33274e9b2d447bdceeed33c8c75f
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Wide Block
-      rect:
-        serializedVersion: 2
-        x: 2393
-        y: 5859
-        width: 866
-        height: 427
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 657cc20e8c1f6de41a46f88b624f366a
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: T-Bar
-      rect:
-        serializedVersion: 2
-        x: 540
-        y: 4794
-        width: 1446
-        height: 1038
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 84b13147f5c20794098e78f0567c11d7
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Tall Block
-      rect:
-        serializedVersion: 2
-        x: 2518
-        y: 4551
-        width: 615
-        height: 822
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: de69c1a7efcd0e04f99dfc5607fc1156
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Left Corner
-      rect:
-        serializedVersion: 2
-        x: 591
-        y: 3353
-        width: 835
-        height: 1069
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 2da2989d81cc2564f8b8695dba7926b0
+      spriteID: 326f7e9975404c1449b8c5a121fe584f
       vertices: []
       indices: 
       edges: []
@@ -214,10 +115,10 @@ TextureImporter:
       name: Long Bar
       rect:
         serializedVersion: 2
-        x: 2088
-        y: 3768
-        width: 1476
-        height: 235
+        x: 1598
+        y: 5221
+        width: 1187
+        height: 153
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -225,7 +126,127 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 45741233953c5ac4b8a276281b07672e
+      spriteID: 7e54e74bc080146499f2d5f56c4ca066
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wide Block
+      rect:
+        serializedVersion: 2
+        x: 3053
+        y: 5140
+        width: 682
+        height: 332
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c98ce32a1a1e8ab4ebafbe11665a5a48
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Long Corner
+      rect:
+        serializedVersion: 2
+        x: 566
+        y: 3498
+        width: 651
+        height: 848
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bc2b234a6b9918c4f9e8f353de656bb6
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: T-Bar Tall
+      rect:
+        serializedVersion: 2
+        x: 1611
+        y: 3524
+        width: 1161
+        height: 822
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 15e249677864e87408036c938566fb8f
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tall Block
+      rect:
+        serializedVersion: 2
+        x: 3184
+        y: 3563
+        width: 482
+        height: 649
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fe5d906628683ea4bac2be78be862f7c
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: T-Bar Short
+      rect:
+        serializedVersion: 2
+        x: 322
+        y: 2747
+        width: 1138
+        height: 636
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bdd8412262de4964ea87d9cc3f255670
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Small Bar
+      rect:
+        serializedVersion: 2
+        x: 3174
+        y: 2815
+        width: 502
+        height: 157
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4d15da671509de54fb6b5e7ee71e898a
       vertices: []
       indices: 
       edges: []
@@ -233,7 +254,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 148d7422721c7c44fa113486c2a6afca
+    spriteID: 44f99767e7a0a82408fd34c694e14f1f
     vertices: []
     indices: 
     edges: []
