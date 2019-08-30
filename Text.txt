@@ -1,0 +1,77 @@
+Ms-Pacman's "Waka"
+Coinciding with ms-pacmans' incessent sound effect is a different sound for when a pellet is consumed. Similarly to a "waka", this sound effect is extremely short and was selected with the intention of giving a an easy flowing sound due to how rapidly pellets are picked up in a standard game of ms-pacman/pacman.
+
+Start Game
+The start game sound occurs every time before the player starts moving for the first time in their life. This sound needs to be quick and immersive and adequetly prepare the player to react to the moving enemies onscreen.
+
+Start Menu Music
+Going against the grain of the oriignal ms-pacman, this start menu music is quite slow-paced and reserved. I decided that prior to starting the game there is no true action or intensity and therefore no need to usse such an envigorating track. By using this easy listening music, the player can watch the opening menu screen as the actors (enemies) will line-up and the player can insert as many coins as they please.
+
+Super Mode
+Super mode was always needing to be a step above the game music. aiming to keep in sync with the game tracks,I used the same royalty-free music artist and will attempt to splice these tracks as the player switches between running from ghosts and chasing them down.
+
+Victory Musc
+Lastly but certainly not least, is the victory sound. Played when ms-pacman with the help of the player rids the board of all pellets, this sound effect is short and sweet and delivers the reward and satisfaction the player has deserved for completing the map.
+
+Initial Movement Development
+The initial movement for Ms-Pacman has been coded in a very basic C# script aptly title "MsPacman.cs". The script uses a few methods, one to check which movement button has been pressed, one to move Ms. Pac-man, and another to check the orientation and direction she should be facing.The first method (Movement) uses if statements and a GetAxis to allow the player to change the controls should they want to. Depending on which button is pressed a variable "direction" is set to a direction. This variable is passed into the Move() method which transforms the localposition and updates the direction Ms. Pac-man is moving in. Lastly, the CheckOrientation() method checks which direction Ms. Pac-man is supposed to be facing and either rotates or flips her sprite to fit accordingly.
+
+Git Repository
+Up until recently my Git Repository was cluttered with constant commits due to my work on this project taking place across multiple machines. As I came to the development of Ms. Pac-man movement I begun to branch in two directions, one using a system of nodes, and another using RigidBody physics. Unfortunately RigidBody physics are not permitted for the final project so that branch will now lay dormant. I have also created a development branch to contain smaller and "riskier" changes that may be better off not being placed on the master branch yet. I plan to create a feature branch when I reach more complex aspects of my project but haven't found the need for one yet.
+
+Plan for Coded System
+Movement
+Movement is the sole aspect that defines Ms. Pac-man. Her movement alone is quite simplistic, once leaving the starting position she moves at a fixed speed continuously until she crashes into something. She may only move horizontally or vertically and will look in the direction she is travelling. This has all already been coded (except for any collision detection).
+
+Collision Detection
+One of the harder aspects for MsPacman, I originally planned to use RigidBody physics (until I read the assignment notification) and am now sourcing ways of doing this via nodes. This detection of walls and barriers will be an immense challenge but also one of the most vital. 
+
+User-Input
+User input in the original MsPacman is very simple, only requiring a joystick (now an up,down,left,right) the player maneuvers Ms. Pac-man in the direction they wish for her to go (unless she is impeded by a wall or enemy)
+
+Object Behaviours - Enemies
+The Enemies of MsPacman will most likely be the hardest aspect to implement. There are four villians in this retro game and they all exhibit a unique AI controlled behaviour. They are as Follows:
+
+	Blinky: The red ghost, chases Ms. Pac-man around the map uninterrupted. This will require a script that finds the players location and looks for the shortest route to get there.
+
+	Pinky: Obviously the pink ghost, she attempts to get infront of pacman and works to create a pincer movement with Blinky. Some interpretations (i.e. this specification) identify this as her simply moving clock-wise around the level. This will be easier to code and I aim to implement a path for her to follow with some deviations.
+
+Inky: The blue ghost, his aim is to get close to MP and then retreat so as to create a distraction and lure MP into a trap. This behaviour is similar to Blinky but has the change of moving away from her instead of blinky's method of going for the kill.
+
+Green/Orange: Sue, as she is named in the Ms. Pac-man variant, moves randomly at each junction in the level. This will be a confusing AI to implement as it is from my perspective drastically different to the other three.
+
+Object Behaviours - Pellets
+These pellets are the most reused asset of Ms. Pac-man. The aim for them is to dissapear, add score and play a sound when Ms. Pac-man runs over (consumes) them. There will also need to be a check to see if all pellets in the game are removed at which point the player wins the level.
+
+Object Behaviours - Super Pellets
+This special type of pellet is much less common and much more useful. They will be difficult to implement as when they are consumed, the entire games rules change. This will affect all characters (enemies and hero) and their sprite as they will turn blue and run away from the power-up (consumes) MP. It will also change the audio and allow the player to gain bonus points until the power-up runs out.
+
+Game Rules - Scoring
+Scoring in this game comes from three common events, eating a pellet, eating an enemy, eating a bonus item. The score is to be displayed on the top of the game board and update every frame.
+
+Game Rules - Health & Death/Losing
+Ms. Pacman will have three lives and will lose one every time she runs into a ghost without being powered-up. This will precede a death scene and a resetting of all characters on the board. It is possible for the player to gain more lives by reaching certain point milestones. When the player runs out of these lives a game over sequence will take place and the player should be returned to the game menu.
+
+Game Rules - Winning
+The player wins when all pellets in the game are removed, this plays a victory sound and typically moves the player to the next level, however for this assignment there is only one of the classic levels to be recreated.
+
+Game Rules - Teleporting
+There are two tunnels in the original Ms. Pac-man board that will allow strategic movements for the player. This will be coded through a script that reassigns the players position on the board when they enter one of these tunnels.
+
+Menu Screens
+There is one main menu screen in Ms. Pac-man that is divided into two parts. There is the opening scene which introduces all the main characters of the game and asks the player to insert a coin, and there is a second aspect after the player inserts said coin where the game asks for the player to begin. I am attempting to faithfully recreate every aspect of this scene but may not be able to recreate all animations in time.
+
+Menu Screens - User Interface
+There will be very few options for the player (just like in the original MP). They will be able to "insert a coin" (pressing a button), they will be able to start a game and they will also be able to start an "alternate game" which will contain the new level I plan to build for the innovate section.
+
+
+Design Proposal
+My design proposal incorporates multiple elements that will take the original formula for Ms. Pac-man and change it into something new and refreshing. I aim to do this through the creation of a new level, one of a different map, different elements, and if I am able to, custom options. These options will include the speed at which the characters can move and the enemies that will appear on the board among other aspects. I will also adjust the bonus items into more relevant power-ups seen in today's modern games. All these aspects will help stay true to the core of the formula of one of the most important game series of all time.
+
+Ms-Pacman's only defence against the ghosts in the original game were the super pellets, already being outnumbered three to one she stands little chance at victory. This is why I aim to add more traditional power-ups to the game. The first comes in the form of a "time-stop" element, this power-up will pause the ghosts in the tracks and allow a sneaky collection of pellets until they unfreeze and resume chasing. Another power-up comes in the form of a speed increase, which will allows the player to run away from the chasing ghosts when she needs it most. Depending on how much I am able to do I would like to include furhter power-ups possibly even a weapon for her to use (either melee or ranged) but I have many other aspects of the game to focus on.
+
+Another Aspect of my modified pacman will be a completely original level. This will require me to lean on my experience of graphic design and form a new construct for MP to run and collect pellets in. By doing this I will be able to create a level that better fits the other aspects of the game I plan to reinvent while keeping the game fresh for the player. Creating a new level is the primary aspect of my ideas to implement change into the game as it is the most recognisable and the most interesting to me.
+
+Lastly, custom options have allowed for companies to extend, improve and personalise video games since their conception. Allowing the player to decide how fast they want to move, what enemies they want to face and what power-ups they want at their disposal would create a game difficulty that perfectly fits the players preference. I plan to implement this with a script asks the player certain questions when they enter "custom game" in the game menu. By implementing a custom game this way I will not break immersion and remain a user friendly UI however this new implementation will be very time consuming and may be unable to deliver in the short time frame.
+
+These three major aspects will together reviatlise this classic game while still staying true to the core of what remains a historic arcade favourite. By altering aspects such as Ms. Pac-mans tools, the level map and the option for customising the game to fit personal preference, players will be able to enjoy a new experience and I will be able to branch out in multiple areas of game development for the success of my proposal.
