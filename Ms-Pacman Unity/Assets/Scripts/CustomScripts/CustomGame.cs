@@ -3,14 +3,12 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class Game : MonoBehaviour
+public class CustomGame : MonoBehaviour
 {
     public GameObject PlayerOneText;
+    public AudioSource MainMusic;
     public GameObject ReadyText;
     public GameObject RedGhost;
-    public GameObject BlueGhost;
-    public GameObject PurpleGhost;
-    public GameObject GreenGhost;
     public GameObject MsPacMan;
 
     // Start is called before the first frame update
@@ -32,7 +30,7 @@ public class Game : MonoBehaviour
             //foreach (GameObject go in gos)
             //    Destroy(go);
         }
-        
+
     }
     IEnumerator StartGame()
     {
@@ -47,6 +45,7 @@ public class Game : MonoBehaviour
         ReadyText.SetActive(false);
         MsPacMan.SetActive(true);
         RedGhost.SetActive(true);
+        MainMusic.Play();
 
         Time.timeScale = 1; // restore time scale from before pause
     }

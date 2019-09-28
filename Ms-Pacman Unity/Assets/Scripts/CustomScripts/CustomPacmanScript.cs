@@ -3,9 +3,10 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class MsPacman : MonoBehaviour
+public class CustomPacmanScript : MonoBehaviour
 {
     public Text scoreText;
+    public AudioSource MainMusic;
     public AudioSource pelletEat;
     public AudioSource WinMusic;
     public AudioSource LoseMusic;
@@ -20,13 +21,14 @@ public class MsPacman : MonoBehaviour
     private bool changedDirection = false;
     private Vector2 lastDirection;
     Quaternion orientation = Quaternion.Euler(0, 0, 0);
-    public float speed = 10.0f;
+    public float speed = 10;
     private Vector2 direction = Vector2.zero;
     int pelletsEaten;
     // Start is called before the first frame update
     void Start()
     {
-        Destroy(lives[lives.Length-1]);
+        Destroy(lives[lives.Length - 1]);
+        speed = PlayerPrefs.GetFloat("PSpeed");
     }
 
     // Update is called once per frame
@@ -93,7 +95,7 @@ public class MsPacman : MonoBehaviour
     {
         if (!changedDirection) //Checks if the player has changed directions, if they haven't then the input is set to false and the player is stuck
         {
-            
+
             if (lastDirection == (Vector2.left)) //The following four if-else statements check if the player has chosen a different input to the input they were using when colliding with the wall
             {
                 if (direction == Vector2.right || direction == Vector2.down || direction == Vector2.up)
@@ -124,7 +126,7 @@ public class MsPacman : MonoBehaviour
             }
         }
 
-        
+
     }
 
     void Validate() //Validates a change in direction and allows movement once again
@@ -154,7 +156,7 @@ public class MsPacman : MonoBehaviour
             {
                 StartCoroutine(WonGame());
             }
-            
+
         }
         else if (collision.transform.tag.Equals("SuperPellet")) //Otherwise checks for tag equalling "SuperPellet"
         {
@@ -166,6 +168,11 @@ public class MsPacman : MonoBehaviour
             {
                 StartCoroutine(WonGame());
             }
+        }
+        else if (collision.transform.tag.Equals("TimeStop")) //Otherwise checks for tag equalling "SuperPellet"
+        {
+            Destroy(collision.gameObject);
+            TimeStop();
         }
         else if (collision.transform.tag.Equals("Enemy"))
         {
@@ -184,6 +191,7 @@ public class MsPacman : MonoBehaviour
 
     IEnumerator Died()
     {
+        MainMusic.Stop();
         Time.timeScale = 0; // pause
         LoseMusic.Play();
         float t = 0;
@@ -192,10 +200,22 @@ public class MsPacman : MonoBehaviour
             yield return null; //runs the coroutine continuously
             t += Time.unscaledDeltaTime; // returns deltaTime without being multiplied by Time.timeScale
         }
-        BlueGhost.transform.position = new Vector3(-39f + 283.4415f, 33 - 72.35378f, 0.5f);
-        PurpleGhost.transform.position = new Vector3(29f +283.4415f, 33 - 72.35378f, 0.5f);
-        GreenGhost.transform.position = new Vector3(-5f +283.4415f, 33 - 72.35378f, 0.5f);
-        RedGhost.transform.position = new Vector3(283.4415f - 5.5f, -72.35378f +85.9f, 0.5f);
+        if (BlueGhost)
+        {
+            BlueGhost.transform.position = new Vector3(-39f + 283.4415f, 33 - 72.35378f, 0.5f);
+        }
+        if (PurpleGhost)
+        {
+            PurpleGhost.transform.position = new Vector3(29f + 283.4415f, 33 - 72.35378f, 0.5f);
+        }
+        if (GreenGhost)
+        {
+            GreenGhost.transform.position = new Vector3(-5f + 283.4415f, 33 - 72.35378f, 0.5f);
+        }
+        if (RedGhost)
+        {
+            RedGhost.transform.position = new Vector3(283.4415f - 5.5f, -72.35378f + 85.9f, 0.5f);
+        }
         gameObject.transform.position = new Vector3(279, -94, 0.5f);
         if (livesLost == 3)
         {
@@ -208,22 +228,33 @@ public class MsPacman : MonoBehaviour
             Destroy(lives[lives.Length - livesLost]);
             direction = Vector2.zero;
             Time.timeScale = 1;
-            BlueGhost.GetComponent<EnemyMovement>().enabled = false; //toggle this script to re-invoke it
-            BlueGhost.GetComponent<EnemyMovement>().enabled = true;
-            GreenGhost.GetComponent<EnemyMovement>().enabled = false; //toggle this script to re-invoke it
-            GreenGhost.GetComponent<EnemyMovement>().enabled = true;
-            PurpleGhost.GetComponent<EnemyMovement>().enabled = false; //toggle this script to re-invoke it
-            PurpleGhost.GetComponent<EnemyMovement>().enabled = true;
+            if (BlueGhost)
+            {
+                BlueGhost.GetComponent<CustomEnemyMovement>().enabled = false; //toggle this script to re-invoke it
+                BlueGhost.GetComponent<CustomEnemyMovement>().enabled = true;
+            }
+            if (GreenGhost)
+            {
+                GreenGhost.GetComponent<CustomEnemyMovement>().enabled = false; //toggle this script to re-invoke it
+                GreenGhost.GetComponent<CustomEnemyMovement>().enabled = true;
+            }
+            if (PurpleGhost)
+            {
+                PurpleGhost.GetComponent<CustomEnemyMovement>().enabled = false; //toggle this script to re-invoke it
+                PurpleGhost.GetComponent<CustomEnemyMovement>().enabled = true;
+            }
+            MainMusic.Play();
         }
-        
-        
+
+
 
     }
 
     IEnumerator WonGame()
     {
-        
+
         Time.timeScale = 0; // pause
+        MainMusic.Stop();
         WinMusic.Play();
         float t = 0;
         while (t < 7f)
@@ -235,5 +266,54 @@ public class MsPacman : MonoBehaviour
         UnityEngine.SceneManagement.SceneManager.LoadScene("Menu");
         Time.timeScale = 1;
     }
-    
+    void TimeStop()
+    {
+
+        if (BlueGhost)
+        {
+            BlueGhost.GetComponent<CustomEnemyMovement>().enabled = false;
+
+        }
+        if (RedGhost)
+        {
+            RedGhost.GetComponent<CustomEnemyMovement>().enabled = false;
+
+        }
+        if (GreenGhost)
+        {
+            GreenGhost.GetComponent<CustomEnemyMovement>().enabled = false;
+
+        }
+        if (PurpleGhost)
+        {
+            PurpleGhost.GetComponent<CustomEnemyMovement>().enabled = false;
+
+        }
+        Invoke("TimeStopReset", 5);
+    }
+    void TimeStopReset()
+    {
+        if (BlueGhost)
+        {
+            BlueGhost.GetComponent<CustomEnemyMovement>().enabled = true;
+
+        }
+        if (RedGhost)
+        {
+            RedGhost.GetComponent<CustomEnemyMovement>().enabled = true;
+
+        }
+        if (GreenGhost)
+        {
+            GreenGhost.GetComponent<CustomEnemyMovement>().enabled = true;
+
+        }
+        if (PurpleGhost)
+        {
+            PurpleGhost.GetComponent<CustomEnemyMovement>().enabled = true;
+
+        }
+    }
+
+
 }
