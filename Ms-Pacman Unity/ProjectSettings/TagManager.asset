@@ -3,7 +3,16 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - Menu1
+  - Lives
+  - Pellet
+  - Wall
+  - SuperPellet
+  - LeftPortal
+  - RightPortal
+  - Enemy
+  - TimeStop
   layers:
   - Default
   - TransparentFX
