@@ -13,15 +13,12 @@ public class PurplePath : MonoBehaviour
     float Timer;
     int CurrentNode;
     static Vector3 CurrentPosition;
-    // Start is called before the first frame update
+    //See RedPath for commenting
     void Start()
     {
         Path = GetComponentsInChildren<PurpleMovement>(); //Creates a path from the RedMovement scripts in children which are connected to the ghosts nodes
         CheckNode();
     }
-
-    //Update is called once per frame
-
 
     void CheckNode()
     {

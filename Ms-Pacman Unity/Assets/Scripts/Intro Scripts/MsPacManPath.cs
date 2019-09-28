@@ -1,7 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+//See RedPath for commenting
 public class MsPacManPath : MonoBehaviour
 {
     MsPacmanMovement[] Path;
@@ -10,15 +10,12 @@ public class MsPacManPath : MonoBehaviour
     float Timer;
     int CurrentNode;
     static Vector3 CurrentPosition;
-    // Start is called before the first frame update
+
     void Start()
     {
         Path = GetComponentsInChildren<MsPacmanMovement>();
         CheckNode();
     }
-
-    //Update is called once per frame
-
 
     void CheckNode()
     {

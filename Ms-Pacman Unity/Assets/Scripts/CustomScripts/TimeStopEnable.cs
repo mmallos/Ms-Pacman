@@ -4,18 +4,11 @@ using UnityEngine;
 
 public class TimeStopEnable : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    void Start() //Gets the String created from the custom menu and destroys the timestops if the player has selected the super pellet special.
     {
         if (PlayerPrefs.GetString("Super").Equals("Super Pellet"))
         {
             Destroy(gameObject);
         }
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
     }
 }

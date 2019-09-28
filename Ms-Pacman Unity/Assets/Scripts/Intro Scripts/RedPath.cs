@@ -30,7 +30,7 @@ public class RedPath : MonoBehaviour
         MsPacManText.SetActive(false);
     }
 
-    void CheckNode()
+    void CheckNode() //Determines what node the player has reached
     {
         if (CurrentNode < Path.Length - 1)
             Timer = 0;
@@ -39,10 +39,10 @@ public class RedPath : MonoBehaviour
 
     void Update()
     {
-        Timer = Speed;
-        if (Enemy.transform.position != CurrentPosition)
+        Timer = Speed; //Sets timer to speed
+        if (Enemy.transform.position != CurrentPosition) //Checks the enemies position and if it does not equal the current node, will move towards it.
         {
-            Enemy.transform.position = Vector3.MoveTowards(Enemy.transform.position, CurrentPosition, Timer);
+            Enemy.transform.position = Vector3.MoveTowards(Enemy.transform.position, CurrentPosition, Timer); //Moves the enemy from its position to the nodes position with respect to timer
         }
         else
         {
@@ -57,17 +57,12 @@ public class RedPath : MonoBehaviour
             ChangeText();
             changed = 1;
         }
-        if (CurrentNode == 2)
-        {
-
-        }
         if (Input.GetKeyDown("1"))
         {
             Destroy(this.gameObject);
-            
         }
-
     }
+
     void ChangeText() //Method that deactivates and activates certain elements for the switchover of ghosts
     {
         Blinky.SetActive(false);

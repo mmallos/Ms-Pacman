@@ -23,10 +23,10 @@ public class MsPacman : MonoBehaviour
     public float speed = 10.0f;
     private Vector2 direction = Vector2.zero;
     int pelletsEaten;
-    // Start is called before the first frame update
+
     void Start()
     {
-        Destroy(lives[lives.Length-1]);
+        Destroy(lives[lives.Length-1]); //Removes one of the life objects at the start
     }
 
     // Update is called once per frame
@@ -69,9 +69,9 @@ public class MsPacman : MonoBehaviour
 
     void CheckOrientation() //Rotates Ms-PacMan depending on what direction she is facing, this avoids unnecessary animation switches
     {
-        if (direction == (Vector2.left))
+        if (direction == (Vector2.left)) 
         {
-            orientation = Quaternion.Euler(0, 0, 0);
+            orientation = Quaternion.Euler(0, 0, 0); //Assigns the rotation to the orientation variable
         }
         else if (direction == (Vector2.right))
         {
@@ -85,7 +85,7 @@ public class MsPacman : MonoBehaviour
         {
             orientation = Quaternion.Euler(0, 0, 90);
         }
-        transform.localRotation = orientation;
+        transform.localRotation = orientation; //sets the players rotation to the orientation variable
 
     }
 
@@ -167,9 +167,9 @@ public class MsPacman : MonoBehaviour
                 StartCoroutine(WonGame());
             }
         }
-        else if (collision.transform.tag.Equals("Enemy"))
+        else if (collision.transform.tag.Equals("Enemy"))//Otherwise checks for tag equalling "Enemy"
         {
-            StartCoroutine(Died());
+            StartCoroutine(Died()); //If the player interacts with an enemy, begins the Death coroutine
         }
     }
     private void OnTriggerExit2D(Collider2D collision) //When leaving a 2D collider
@@ -185,8 +185,8 @@ public class MsPacman : MonoBehaviour
     IEnumerator Died()
     {
         Time.timeScale = 0; // pause
-        LoseMusic.Play();
-        float t = 0;
+        LoseMusic.Play(); //Plays the lose music
+        float t = 0; //Starts a counter
         while (t < 3f)
         {
             yield return null; //runs the coroutine continuously
@@ -196,8 +196,8 @@ public class MsPacman : MonoBehaviour
         PurpleGhost.transform.position = new Vector3(29f +283.4415f, 33 - 72.35378f, 0.5f);
         GreenGhost.transform.position = new Vector3(-5f +283.4415f, 33 - 72.35378f, 0.5f);
         RedGhost.transform.position = new Vector3(283.4415f - 5.5f, -72.35378f +85.9f, 0.5f);
-        gameObject.transform.position = new Vector3(279, -94, 0.5f);
-        if (livesLost == 3)
+        gameObject.transform.position = new Vector3(279, -94, 0.5f); //Resets all the enemies to their intended positions
+        if (livesLost == 3) //Checks if the player has lost too many lives
         {
             UnityEngine.SceneManagement.SceneManager.LoadScene("Menu");
         }
@@ -208,11 +208,11 @@ public class MsPacman : MonoBehaviour
             Destroy(lives[lives.Length - livesLost]);
             direction = Vector2.zero;
             Time.timeScale = 1;
-            BlueGhost.GetComponent<EnemyMovement>().enabled = false; //toggle this script to re-invoke it
+            BlueGhost.GetComponent<EnemyMovement>().enabled = false; //toggles these scripts to re-invoke them
             BlueGhost.GetComponent<EnemyMovement>().enabled = true;
-            GreenGhost.GetComponent<EnemyMovement>().enabled = false; //toggle this script to re-invoke it
+            GreenGhost.GetComponent<EnemyMovement>().enabled = false; 
             GreenGhost.GetComponent<EnemyMovement>().enabled = true;
-            PurpleGhost.GetComponent<EnemyMovement>().enabled = false; //toggle this script to re-invoke it
+            PurpleGhost.GetComponent<EnemyMovement>().enabled = false; 
             PurpleGhost.GetComponent<EnemyMovement>().enabled = true;
         }
         

@@ -35,33 +35,33 @@ public class CustomSettingsScript : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
+    void Update() //This script allows the player to select a custom game of ms-pacman using various movement, special and enemy options
     {
         if (Input.GetKeyDown("escape"))
         {
             SceneManager.LoadScene("Menu");
         }
-        if (Input.GetKeyDown("right"))
+        if (Input.GetKeyDown("right")) //The UI works using an int "currentPac" to determine what setting the user is editing and small MsPacman gameobjects to tell the user what they are editing.
         {
-            if (currentPac == 0)
+            if (currentPac == 0) //Checks what setting the player is specifying
             {
-                if (enemies < 4)
+                if (enemies < 4) //Increases the enemy count if it is less than 4
                 {
                     enemies += 1;
                     enemiesText.text = "Enemies: " + enemies.ToString();
                 }
             }
-            else if (currentPac == 1)
+            else if (currentPac == 1) //Otherwise changes the players speed if they are at the second option
             {
                 PSpeed += 5;
                 PSpeedText.text = "Player Speed: " + PSpeed.ToString();
             }
-            else if (currentPac == 2)
+            else if (currentPac == 2) //Otherwise changes the enemy speed if they are at the third option
             {
                 ESpeed += 5;
                 ESpeedText.text = "Enemy Speed: " + ESpeed.ToString();
             }
-            else if (currentPac == 3)
+            else if (currentPac == 3) //Otherwise changes the power-up at the fourth option
             {
                 if (superPac.Equals("Super Pellet"))
                 {
@@ -74,7 +74,7 @@ public class CustomSettingsScript : MonoBehaviour
                 SuperText.text = "Power-Up: " + superPac;
             }
         }
-        else if (Input.GetKeyDown("left"))
+        else if (Input.GetKeyDown("left")) //Same as the above section but decrements (except in the power-up example where it simply toggles)
         {
             if (currentPac == 0)
             {
@@ -107,7 +107,7 @@ public class CustomSettingsScript : MonoBehaviour
                 SuperText.text = "Power-Up: " + superPac;
             }
         }
-        else if (Input.GetKeyDown("down"))
+        else if (Input.GetKeyDown("down")) //moves the selected option down if they are not at the bottom of the list
         {
             if (currentPac <3)
             {
@@ -118,7 +118,7 @@ public class CustomSettingsScript : MonoBehaviour
 
             
         }
-        else if (Input.GetKeyDown("up"))
+        else if (Input.GetKeyDown("up")) //Moves the selected option up if they are not at the top of the list
         {
             if (currentPac > 0)
             {
@@ -129,8 +129,8 @@ public class CustomSettingsScript : MonoBehaviour
             
         }
 
-        if (Input.GetKeyDown("return"))
-            {
+        if (Input.GetKeyDown("return")) //Saves all the settings to four different player preferences. Multiplies the enemy speed to make the selected speed feel similar to MsPacmans
+        {
             PlayerPrefs.SetInt("enemies", enemies);
             PlayerPrefs.SetFloat("PSpeed", PSpeed);
             ESpeed = ESpeed * 6;

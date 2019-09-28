@@ -8,7 +8,6 @@ public class EnemyMovement : MonoBehaviour
     public Vector3 direction;
     private int rand = 0;
     private int lastDirection = 0;
-    // Start is called before the first frame update
     void Start() //Opening script sets start points for different ghosts through the use of an Invoke clause depending on their names.
     {
         rand = (Random.Range(0, 4)); //Selects randon digit in the range 0-3 (inclusive)
@@ -108,6 +107,5 @@ public class EnemyMovement : MonoBehaviour
             SelectDirection();
             gameObject.transform.position = new Vector3(gameObject.transform.position.x-1, gameObject.transform.position.y-1);
         }
-
     }
 }

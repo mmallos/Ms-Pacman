@@ -28,7 +28,7 @@ public class CustomPacmanScript : MonoBehaviour
     void Start()
     {
         Destroy(lives[lives.Length - 1]);
-        speed = PlayerPrefs.GetFloat("PSpeed");
+        speed = PlayerPrefs.GetFloat("PSpeed"); //Sets player custom speed
     }
 
     // Update is called once per frame
@@ -169,7 +169,7 @@ public class CustomPacmanScript : MonoBehaviour
                 StartCoroutine(WonGame());
             }
         }
-        else if (collision.transform.tag.Equals("TimeStop")) //Otherwise checks for tag equalling "SuperPellet"
+        else if (collision.transform.tag.Equals("TimeStop")) //Otherwise checks for tag equalling "TimeStop"
         {
             Destroy(collision.gameObject);
             TimeStop();
@@ -266,7 +266,7 @@ public class CustomPacmanScript : MonoBehaviour
         UnityEngine.SceneManagement.SceneManager.LoadScene("Menu");
         Time.timeScale = 1;
     }
-    void TimeStop()
+    void TimeStop() //Disables the movement scripts for the ghosts
     {
 
         if (BlueGhost)
@@ -289,9 +289,9 @@ public class CustomPacmanScript : MonoBehaviour
             PurpleGhost.GetComponent<CustomEnemyMovement>().enabled = false;
 
         }
-        Invoke("TimeStopReset", 5);
+        Invoke("TimeStopReset", 5); //re-enables the scripts after 5 seconds thus bringing the ghosts back over their start times + 5 (i.e. 5,10,15,20)
     }
-    void TimeStopReset()
+    void TimeStopReset() //re-enables the enemy movement scripts
     {
         if (BlueGhost)
         {

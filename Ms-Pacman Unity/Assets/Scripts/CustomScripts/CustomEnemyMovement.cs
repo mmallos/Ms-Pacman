@@ -11,10 +11,10 @@ public class CustomEnemyMovement : MonoBehaviour
     // Start is called before the first frame update
     void Start() //Opening script sets start points for different ghosts through the use of an Invoke clause depending on their names.
     {
-        speed = PlayerPrefs.GetFloat("ESpeed");
+        speed = PlayerPrefs.GetFloat("ESpeed"); //Uses player preferences to get the enemies speed and set it accordingly
         rand = (Random.Range(0, 4)); //Selects randon digit in the range 0-3 (inclusive)
         SelectDirection();
-        if (PlayerPrefs.GetInt("enemies") < 4)
+        if (PlayerPrefs.GetInt("enemies") < 4) //Uses player prefs to see how many enemies the player indicated and destroys certain ghosts accordingly
         {
             if (transform.name.Equals("BlueGhost"))
             {
@@ -78,7 +78,7 @@ public class CustomEnemyMovement : MonoBehaviour
     }
     void AllowMove() //Sets the speed to the default speed.
     {
-        speed = PlayerPrefs.GetFloat("ESpeed");
+        speed = PlayerPrefs.GetFloat("ESpeed"); //Assigns custom speed
     }
 
     // Update is called once per frame

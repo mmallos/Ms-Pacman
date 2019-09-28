@@ -54,10 +54,7 @@ public class MenuScript : MonoBehaviour
         }
         if (Input.GetKeyDown("escape"))
         {
-            UnityEngine.SceneManagement.SceneManager.LoadScene("Menu");
-            GameObject[] gos = GameObject.FindGameObjectsWithTag("Lives");
-            foreach (GameObject go in gos)
-                Destroy(go);
+           SceneManager.LoadScene("Menu");
         }
 
     }

@@ -13,24 +13,18 @@ public class Game : MonoBehaviour
     public GameObject GreenGhost;
     public GameObject MsPacMan;
 
-    // Start is called before the first frame update
     void Start()
     {
         MsPacMan.SetActive(false);
         RedGhost.SetActive(false);
         StartCoroutine(StartGame());
-
     }
 
-    // Update is called once per frame
     void Update()
     {
         if (Input.GetKeyDown("escape"))
         {
             UnityEngine.SceneManagement.SceneManager.LoadScene("Menu");
-            //GameObject[] gos = GameObject.FindGameObjectsWithTag("Lives");
-            //foreach (GameObject go in gos)
-            //    Destroy(go);
         }
         
     }
@@ -47,7 +41,6 @@ public class Game : MonoBehaviour
         ReadyText.SetActive(false);
         MsPacMan.SetActive(true);
         RedGhost.SetActive(true);
-
         Time.timeScale = 1; // restore time scale from before pause
     }
 }

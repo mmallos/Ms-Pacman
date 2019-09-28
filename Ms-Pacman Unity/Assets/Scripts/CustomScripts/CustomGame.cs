@@ -17,7 +17,6 @@ public class CustomGame : MonoBehaviour
         MsPacMan.SetActive(false);
         RedGhost.SetActive(false);
         StartCoroutine(StartGame());
-
     }
 
     // Update is called once per frame
@@ -26,9 +25,6 @@ public class CustomGame : MonoBehaviour
         if (Input.GetKeyDown("escape"))
         {
             UnityEngine.SceneManagement.SceneManager.LoadScene("Menu");
-            //GameObject[] gos = GameObject.FindGameObjectsWithTag("Lives");
-            //foreach (GameObject go in gos)
-            //    Destroy(go);
         }
 
     }
@@ -46,7 +42,6 @@ public class CustomGame : MonoBehaviour
         MsPacMan.SetActive(true);
         RedGhost.SetActive(true);
         MainMusic.Play();
-
         Time.timeScale = 1; // restore time scale from before pause
     }
 }
